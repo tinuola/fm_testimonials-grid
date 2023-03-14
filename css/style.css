@@ -8,30 +8,123 @@
   --primary-font: 'Barlow Semi Condensed', sans-serif;
 }
 /* 
-1. "Verified Graduate" has the same color as the person's name with 50% opacity
+
 2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
 */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   font-family: var(--primary-font);
-  font-size: 13px;
+  font-size: 0.85rem;
+  color: var(--dark-gray-blue);
+  background-color: var(--light-gray-blue);
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   width: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute;  
+  position: absolute;
+}
+
+main {
+  max-width: 320px;
+  margin: 2rem auto 3rem auto;
+}
+
+section {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'daniel   daniel  jonathan  kira'
+      'jeanette patrick patrick   kira';
+  }
+}
+
+article {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+article:nth-of-type(1) {
+  background-color: var(--violet);
+}
+
+article:nth-of-type(2) {
+  background-color: var(--dark-gray-blue);
+}
+
+article:nth-of-type(4) {
+  background-color: var(--dark-black-blue);
+}
+
+article:nth-of-type(3),
+article:nth-of-type(5) {
+  background-color: var(--white);
+}
+
+article:nth-of-type(1),
+article:nth-of-type(2),
+article:nth-of-type(4) {
+  color: var(--white);
+}
+
+article header {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'image author'
+    'image graduate';
+}
+
+article header img {
+  width: 35px;
+  border-radius: 50%;
+  grid-area: image;
+}
+
+article header p:nth-of-type(1) {
+  grid-area: author;
+  align-self: end;
+  font-weight: 600;
+}
+
+article header p:nth-of-type(2) {
+  grid-area: graduate;
+  opacity: 0.5;
+}
+
+article h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+article > p {
+  line-height: 1.45;
+  opacity: 0.7;
+}
+
+footer {
+  margin-bottom: 2rem;
 }
 
 .fm-byline {
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   line-height: 1.5;
   text-align: center;
