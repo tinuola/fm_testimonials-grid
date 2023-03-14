@@ -7,10 +7,7 @@
   --white: hsl(0, 0%, 100%);
   --primary-font: 'Barlow Semi Condensed', sans-serif;
 }
-/* 
 
-2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
-*/
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -34,41 +31,73 @@ body {
   position: absolute;
 }
 
-main {
+main.container {
   max-width: 320px;
   margin: 2rem auto 3rem auto;
 }
 
-section {
-  display: grid;
-  gap: 1.25rem;
+@media (min-width: 1200px) {
+  main.container {
+    max-width: 1100px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   section {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
     grid-template-areas:
       'daniel   daniel  jonathan  kira'
       'jeanette patrick patrick   kira';
+    grid-auto-flow: dense;
   }
 }
 
 article {
   padding: 1.5rem;
+  margin-bottom: 1.25rem;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+article:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  article {
+    padding: 1.85rem;
+    margin-bottom: 0;
+  }
 }
 
 article:nth-of-type(1) {
   background-color: var(--violet);
+  grid-area: daniel;
 }
 
 article:nth-of-type(2) {
   background-color: var(--dark-gray-blue);
+  grid-area: jonathan;
+}
+
+article:nth-of-type(3) {
+  grid-area: jeanette;
 }
 
 article:nth-of-type(4) {
   background-color: var(--dark-black-blue);
+  grid-area: patrick;
+}
+
+article:nth-of-type(5) {
+  grid-area: kira;
 }
 
 article:nth-of-type(3),
@@ -109,12 +138,12 @@ article header p:nth-of-type(2) {
   opacity: 0.5;
 }
 
-article h2 {
+article main h2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
-article > p {
+article main > p {
   line-height: 1.45;
   opacity: 0.7;
 }
