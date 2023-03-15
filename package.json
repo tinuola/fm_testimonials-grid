@@ -1,0 +1,25 @@
+{
+  "name": "fm_testimonials-grid",
+  "version": "2.0.0",
+  "description": "React solution to the 'Testimonials Grid' challenge on Frontend Mentor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinuola/fm_testimonials-grid.git"
+  },
+  "keywords": [
+    "frontend mentor",
+    "css grid",
+    "react"
+  ],
+  "author": "Tech Tinu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinuola/fm_testimonials-grid/issues"
+  },
+  "github page": "https://github.com/tinuola/fm_testimonials-grid#readme",
+  "homepage": "https://tinuola.github.io/fm_testimonials-grid/"
+}

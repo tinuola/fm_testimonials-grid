@@ -3,3 +3,13 @@
 .vscode/
 Thumbs.db
 .Trashes
+
+# Node & React
+/node_modules
+.parcel-cache/
+dist/
+.env
+coverage/
+
+# Misc
+sandbox.md
