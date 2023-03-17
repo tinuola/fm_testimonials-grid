@@ -23,8 +23,8 @@ Live Site: [https://tinuola.github.io/fm_testimonials-grid/](https://tinuola.git
 ### Tools & Resources
 
 - HTML, CSS, JavaScript
-- CSS Grid
-- React
+  - CSS Grid
+  - React
 - [A Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-modern-css-reset/)
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_
