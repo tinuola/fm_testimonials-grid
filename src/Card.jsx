@@ -1,3 +1,5 @@
+import React from "react";
+
 const Card = ({ name, image, blurb, testimonial }) => {
   return (
     <article>
