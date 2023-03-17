@@ -2,6 +2,8 @@
   "name": "fm_testimonials-grid",
   "version": "2.0.0",
   "description": "React solution to the 'Testimonials Grid' challenge on Frontend Mentor.",
+  "github page": "https://github.com/tinuola/fm_testimonials-grid",
+  "homepage": "https://tinuola.github.io/fm_testimonials-grid/",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -27,8 +29,6 @@
   "bugs": {
     "url": "https://github.com/tinuola/fm_testimonials-grid/issues"
   },
-  "github page": "https://github.com/tinuola/fm_testimonials-grid",
-  "homepage": "https://tinuola.github.io/fm_testimonials-grid/",
   "devDependencies": {
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.36.0",
