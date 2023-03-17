@@ -2,7 +2,7 @@ const Card = ({ name, image, blurb, testimonial }) => {
   return (
     <article>
       <header>
-        <img src={image} alt={`Student ${name}`} />
+        <img src={`/images/${image}`} alt={`Student ${name}`} />
         <p>{name}</p>
         <p>Verified Graduate</p>
       </header>

@@ -5,7 +5,6 @@ import Data from "./data.json";
 import Footer from "./Footer";
 
 const App = () => {
-  // console.log(Data);
   return (
     <div className="container">
       <main>
