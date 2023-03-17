@@ -5,18 +5,16 @@
   --light-gray-blue: hsl(210, 46%, 95%);
   --light-gray: hsl(0, 0%, 81%);
   --white: hsl(0, 0%, 100%);
-  --primary-font: 'Barlow Semi Condensed', sans-serif;
+  --primary-font: "Barlow Semi Condensed", sans-serif;
 }
 
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-rendering: optimizeSpeed;
   font-family: var(--primary-font);
   font-size: 0.85rem;
   color: var(--dark-gray-blue);
   background-color: var(--light-gray-blue);
-  display: grid;
-  grid-template-rows: 1fr auto;
 }
 
 .sr-only {
@@ -31,19 +29,25 @@ body {
   position: absolute;
 }
 
-main.container {
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+main {
   max-width: 320px;
   margin: 2.5rem auto;
 }
 
 @media (min-width: 768px) {
-  main.container {
+  main {
     max-width: 650px;
   }
 }
 
 @media (min-width: 1200px) {
-  main.container {
+  main {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
@@ -58,9 +62,9 @@ main.container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
     grid-template-areas:
-      'daniel   patrick'
-      'jonathan jeanette'
-      'kira     kira';
+      "daniel   patrick"
+      "jonathan jeanette"
+      "kira     kira";
   }
 }
 
@@ -69,8 +73,8 @@ main.container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      'daniel   daniel  jonathan  kira'
-      'jeanette patrick patrick   kira';
+      "daniel   daniel  jonathan  kira"
+      "jeanette patrick patrick   kira";
     grid-auto-flow: dense;
   }
 }
@@ -90,7 +94,7 @@ article:last-of-type {
 
 article:nth-of-type(1) {
   background-color: var(--violet);
-  background-image: url('../assets/images/bg-pattern-quotation.svg');
+  background-image: url("../assets/images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: 90% 2%;
 }
@@ -157,8 +161,8 @@ article header {
   grid-template-columns: 50px auto;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    'image author'
-    'image graduate';
+    "image author"
+    "image graduate";
 }
 
 article header img {
