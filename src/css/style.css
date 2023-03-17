@@ -94,7 +94,7 @@ article:last-of-type {
 
 article:nth-of-type(1) {
   background-color: var(--violet);
-  background-image: url("../assets/images/bg-pattern-quotation.svg");
+  background-image: url("/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: 90% 2%;
 }
