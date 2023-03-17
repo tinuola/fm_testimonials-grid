@@ -13,7 +13,7 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d src/dist"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "frontend mentor",
