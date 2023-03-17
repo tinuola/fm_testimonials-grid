@@ -4,6 +4,7 @@
   "description": "React solution to the 'Testimonials Grid' challenge on Frontend Mentor.",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,8 @@
     "url": "https://github.com/tinuola/fm_testimonials-grid/issues"
   },
   "github page": "https://github.com/tinuola/fm_testimonials-grid#readme",
-  "homepage": "https://tinuola.github.io/fm_testimonials-grid/"
+  "homepage": "https://tinuola.github.io/fm_testimonials-grid/",
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
 }
