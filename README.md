@@ -20,7 +20,6 @@ Live Site: [https://tinuola.github.io/fm_testimonials-grid/](https://tinuola.git
 ### To deploy to Github Pages
 
 ```
-#
 $ npm run build
 $ git add src/dist -f
 $ git commit -m "Adding dist"
