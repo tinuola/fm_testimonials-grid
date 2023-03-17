@@ -7,7 +7,6 @@ Thumbs.db
 # Node & React
 /node_modules
 .parcel-cache/
-dist/
 .env
 coverage/
 
