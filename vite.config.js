@@ -4,5 +4,6 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   root: "src",
-  base: "/fm_testimonials-grid/",
+  base: "/",
+  publicDir: "public",
 });
