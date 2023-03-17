@@ -14,12 +14,13 @@ Live Site: [https://tinuola.github.io/fm_testimonials-grid/](https://tinuola.git
 
 ### Potential Enhancement(s)
 
+- Card-based layout is ideal for a simple React app practice
 - Option to select and switch color palettes
 
 ### Tools & Resources
 
 - HTML, CSS, JavaScript
-- CSS Grid
+  - CSS Grid
 - [A Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-modern-css-reset/)
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_
