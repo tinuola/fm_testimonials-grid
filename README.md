@@ -12,7 +12,7 @@ Solution to the _[Testimonials Grid](https://www.frontendmentor.io/challenges/te
 
 Live Site: [https://tinuola.github.io/fm_testimonials-grid/](https://tinuola.github.io/fm_testimonials-grid/)
 
-### Potential Enhancement(s)
+### Enhancement(s)
 
 - Card-based layout is ideal for a simple React app practice
 - Option to select and switch color palettes
@@ -20,7 +20,7 @@ Live Site: [https://tinuola.github.io/fm_testimonials-grid/](https://tinuola.git
 ### Tools & Resources
 
 - HTML, CSS, JavaScript
-  - CSS Grid
-- [A Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-modern-css-reset/)
+- CSS Grid
+- CSS Resets
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_
