@@ -10,23 +10,29 @@ Solution to the _[Testimonials Grid](https://www.frontendmentor.io/challenges/te
 
 ### Solution
 
-Live Site: [https://tinuola.github.io/fm_testimonials-grid/](https://tinuola.github.io/fm_testimonials-grid/)
+Live Sites:
+
+- React App: [https://tt-fm-testimonials-grid.netlify.app/](https://tt-fm-testimonials-grid.netlify.app/)
+- HTML-CSS: [https://tinuola.github.io/fm_testimonials-grid/](https://tinuola.github.io/fm_testimonials-grid/)
 
 ### Retrospective
 
-- After completing the initial challenge with HTML & CSS ( **_Branch: 01_html-css_**), realized that the card-based layout would be ideal for a simple React practice (**_Branch: 02_react_**). The React version is the currently deployed version.
-- Ran into errors deploying the React version to Github Pages. Discovered that deploy script was looking for a `build` directory that didn't exist since Vite was bundling production files to a `dist` directory. A Dev.to article (linked in _Resources_) helped with a slight update needed in the Vite config file and the deployment commands.
+- Completed the initial challenge with HTML & CSS ( _Branch: 01_html-css_ )
+- Realized the card-based/component-like layout could work for a simple React practice (_Branch: 02_react_)
+  - Stored the original markup content into a _json_ file to pull as data
+- Ran into errors deploying the React version to Github Pages
+  - Discovered that deploy script was looking for a `build` directory that didn't exist since Vite was bundling production files to a `dist` directory
+  - [Dev.to article](https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane) helped with a slight update needed in the Vite config file and the deployment commands
+  - Local build was fine, but still unable to deploy to Github Pages; decided to scrap that approach and deployed to Netlify instead
 
-### To deploy to Github Pages
+#### To run React version locally
 
 ```
-$ npm run build
-$ git add dist -f
-$ git commit -m "Adding dist"
-$ git subtree push --prefix dist origin gh-pages
+$ npm install
+$ npm run dev
 ```
 
-### Potential Enhancement(s)
+### Enhancement(s)
 
 - ~~Card-based layout for a simple React app practice~~
 - Option to select and switch color palettes
@@ -34,9 +40,8 @@ $ git subtree push --prefix dist origin gh-pages
 ### Tools & Resources
 
 - HTML, CSS, JavaScript
-  - CSS Grid
-  - React
-- [A Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-modern-css-reset/)
-- [Deploying Vite App to GitHub Pages](https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane) (_Dev.to_)
+- CSS Grid
+- CSS Resets
+- React
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_

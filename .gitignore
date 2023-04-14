@@ -9,6 +9,6 @@ Thumbs.db
 .parcel-cache/
 .env
 coverage/
+dist/.DS_Store
 
 # Misc
-sandbox.md
